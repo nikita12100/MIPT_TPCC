@@ -1,2 +1,19 @@
 # MIPT_TPCC
-Theory and Practice of Concurrent Computing
+
+## Theory and Practice of Concurrent Computing.
+MIPT second yaer, fourth term.
+
+1. **0-intro**
+    * *deadlock* --- задача в том чтобы завести файберы в дэдлок.
+    * *dining* --- известная задача об обедающих философах.
+
+2. **1-mutex**
+    * *mutex* --- реализация  `std::mutex`.
+    * *spinlock* --- реализация методов `store` и `exchange` у атомиков.
+    * *tricky* --- в этой задаче нужно построить исполнение, в котором потоки бесконечно долго не могут захватить свободный `TrickyLock`.
+    * *try-lock* ---  реализация метода `TryLock` для `TicketLock`.
+
+3. **2-condvar**
+    * *barrier* ---  реализация циклического барьера с помощью условных переменных.
+    * *condvar* --- реализация условной переменной.
+    * *semaphore* --- в файле `semaphore.hpp` реализовать считающий семафор неограниченной ёмкости с помощью услвных переменных, `channel.hpp` реализовать канал с помощью семафоров.
